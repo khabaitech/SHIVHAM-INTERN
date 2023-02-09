@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="refresh" content="">
+	<title>car movment</title>
+	<style>
+
+		.bg
+		{
+			height: 400px;
+			width: 400%;
+			background: url('img4.jpg');
+			background-size: cover;
+			background-position: center;
+			background-repeat: repeat-x;
+			position: relative;
+			overflow-x: hidden;
+			z-index: 1;
+			animation: img 5s linear infinite;
+		}
+		.cg
+		{
+				background-image: url('car.png');
+				background-repeat: no-repeat;
+				height: 200px;
+				width: 800px;
+				display: block;
+				position: absolute;
+				top: 400px;
+				left: 100px;
+				z-index: 2;
+				background-size: 300px;
+				animation: car 1s linear infinite;
+
+			}
+		#cg2
+		{  
+			background-repeat: no-repeat;
+				display: block;
+				position: absolute;
+				top: 450px;
+				left: 650px;
+				z-index: 2;
+				background-size: 300px;
+				animation: car 1s linear infinite;
+		}
+			
+		.eg
+		{
+			height: 200px;
+			width: 500%;
+			display: block;
+			background-image:url('road5.jpg');
+			position: absolute;
+			top: 400px;
+			bottom: 1px;
+			left: 0;
+			right: 0;
+			z-index: 1;
+			animation: road 5s linear infinite;
+		}
+
+		@keyframes road
+		{
+			100%{transform: translateX(-3400px);
+
+			}
+			
+		}
+			
+			#w1{
+				position: absolute;
+				top: 440px;
+				left: 125px;
+				z-index: 3;
+				animation: wheel 0.5s linear infinite;
+			}
+			#w2{
+				position: absolute;
+				top: 440px;
+				left: 305px;
+				z-index: 3;
+				animation: wheel 0.5s linear infinite;
+			}
+			#w4{
+				position: absolute;
+				top: 500px;
+				left: 702px;
+				animation: wheel 0.5s linear infinite;
+				z-index: 5;
+
+			}
+			#w3{
+				position: absolute;
+				top: 500px;
+				left: 900px;
+				animation: wheel 0.5s linear infinite;
+				z-index: 5;
+			}
+			@keyframes wheel
+			{
+				100%{
+					transform: rotate(360deg);
+				}
+			}
+				@keyframes car
+			{
+				
+				100%{
+					transform: translateY(-1px);
+				}
+				50%{
+					transform: translateY(1px);
+				}
+				0%{
+					transform: translateY(-1px);
+				}
+			}
+				@keyframes img
+		{
+			100%{transform: translateX(-3400px);
+		}
+	}
+		audio{
+			background: transparent;
+			height: 20px;
+			width: 200px;
+			z-index: 2;
+			position: absolute;
+			top: 450px;
+			left: 150px;
+			color: white;
+			background-color: white;
+			opacity: 0%;
+		}
+			
+			
+			
+	</style>
+</head>
+<body>
+<div class="bg">
+</div>
+<div class="eg">
+</div>
+<div class="cg">
+</div>
+<div id="cg2">
+	<img src="car2.png" height="90px" width="350px" >
+</div>
+<div class="wheel">
+	<img src="wheel.png" height="50px" width="50px" id="w1">
+	<img src="wheel.png" height="50px" width="50px" id="w2">
+</div>
+<div class="chaka">
+	<img src="wheel.png" height="60px" width="60px" id="w3">
+	<img src="wheel.png" height="60px" width="60px" id="w4">
+</div>
+<audio controls>
+	<source src="horn.mp3" type="audio/mp3">
+</audio>
+
+</body>
+</html>

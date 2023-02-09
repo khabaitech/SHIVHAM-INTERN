@@ -1,0 +1,472 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <title></title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;400&family=Unbounded:wght@200;300;400;500;600;700;800;900&display=swap&#39;');
+
+body{
+
+    height: 100vh;1
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    font-family: 'Unbounded', cursive;
+    background:url(img1.jpg);
+}
+
+.main-container{
+    position: relative;
+    width: 90%;
+}
+
+.static-container{
+    display: inline-block;
+    margin: 20px;
+    font-style: italic;
+    font-size: 30px;
+    font-weight: 900;
+    width: 280px;
+   
+    background: rgb(131,58,180);
+background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    background-size: 300%;
+   
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+   
+    animation: color 3s infinite alternate ease-in;
+}
+
+
+.moving-text-container{
+    display: inline-block;
+    height: 40px;
+    width: 300px;
+    backface-visibility: hidden;
+   
+    font-size: 25px;
+    color: darkblue;
+   
+    position: absolute;
+    top: 88px;
+   
+    overflow: hidden;
+}
+
+.moving-text-container > p{
+    padding: 0;
+    margin: 5px;
+}
+
+.moving-text{
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    letter-spacing: 3px;
+    position: absolute;
+    animation: upDown 7s infinite;
+}
+
+@keyframes upDown{
+   
+    0% {
+       top: 5px;
+    }
+   
+    10%{
+        top: 5px;
+    }
+   
+    20%{
+        top: -50px;
+    }
+   
+    30%{
+        top: -50px;
+    }
+   
+    40%{
+        top: -105px;
+    }
+   
+    50%{
+        top: -105px;
+    }
+   
+     60%{
+        top: -160px;
+    }
+   
+    70%{
+        top: -160px;
+    }
+   
+    80%{
+        top: 30px;
+    }
+   
+    85% {
+        top: 5px;
+    }
+   
+    100% {
+        top: 5px;
+    }
+   
+}
+
+@keyframes color{
+   
+    0% {
+        background-position: left;
+    }
+   
+    100% {
+        background-position: right;
+    }
+}  
+     #top{
+    height: 400px;
+        width: 100%;
+        background: url(https://img.freepik.com/free-vector/blue-pink-halftone-background_53876-99004.jpg?w=2000);
+        background-size:100%; 
+        background-repeat: no-repeat;
+     }
+     .abu{
+        position: absolute;
+        top: 100px;
+        left: 160px;
+     }
+     .sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 10px;
+}
+li{
+    margin: 40px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+/*-----Resume------*/
+.resume .resume-title {
+  font-size: 26px;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #050d18;
+}
+
+.resume .resume-item {
+  padding: 0 0 20px 20px;
+  margin-top: -2px;
+  border-left: 2px solid #1f5297;
+  position: relative;
+}
+
+.resume .resume-item h4 {
+  line-height: 18px;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  color: #050d18;
+  margin-bottom: 10px;
+}
+
+.resume .resume-item h5 {
+  font-size: 16px;
+  background: #e4edf9;
+  padding: 5px 15px;
+  display: inline-block;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.resume .resume-item ul {
+  padding-left: 20px;
+}
+
+.resume .resume-item ul li {
+  padding-bottom: 10px;
+}
+
+.resume .resume-item:last-child {
+  padding-bottom: 0;
+}
+
+.resume .resume-item::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50px;
+  left: -9px;
+  top: 0;
+  background: #fff;
+  border: 2px solid #1f5297;
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="container" id="top">
+        <div class="row">
+        <div col-md-12>
+<div class = 'main-container abu'>
+    <div class = 'static-container'>
+        <h1 class = 'static'> Hi, I am </h1>
+    </div>
+   
+    <div class = 'moving-text-container'>
+        <div class = 'moving-text'
+            <p> Rishav Raj</p>
+            <p> a devloper.</p>
+            <p> a coder. </p>
+            <p> learning web. </p>
+        </div>
+    </div>
+</div></div></div>
+<div id="mySidenav" class="sidenav">
+   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> 
+   <a href="#">Home</a>
+  <a href="#">About</a>
+  <a href="#">protfolio</a>
+  <a href="#">Education</a>
+  <a href="#">Contact</a>
+</div>
+<span style="font-size:30px; position: fixed;cursor:pointer" onclick="openNav()">&#9776;</span>
+</div>
+<div class="container">
+    <div class="row">
+    <div class="col-md-12">
+        
+       </div>   
+    </div>
+</div>
+<h2 style="text-align: center;">About</h2>
+<p style="text-align: center; margin: 25px;"><i>hii! i am Rishav raj a web devloper,start my coding journey form a summer internship in Khabai tech.Currently doing Diploma in computer science form a Govt. polytechnic patna-7. Making web pages and portfolio by the use of css and javascript.</p>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2">
+            </div> 
+            <div class="col-md-4">
+                <img src="rs5.jpg" height="420px" width="80%" >
+            </div>
+             <div class="col-md-6">
+                <h3 style="color: powderblue;">About My Carrier</h3><br>
+                <p>hey! Do you really wanna know what am I</p>
+                <table>
+                    <tr>
+                        <td>
+                            <ul type="">
+                            <li> Birthday: 02-03-2004</li>
+                            <li> Age: 19</li> 
+                            <li> City: Patna</li>
+                            <li> phn: +91 7369060094</li>
+                        </ul>
+                        </td>
+                        <td>
+                            <!-- using angular bracket sign by &gt; -->
+                             <ul type="">
+                            <li> Email: kumarshivamsingher@gmail.com</li>
+                            <li> Courses: html; css; javascript</li> 
+                            <li> Degree: diploma in computer science</li>
+                            <li> Master in: Web devlopment</li>
+                        </ul>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+              <div class="col-md-2">
+            </div>
+            <p>So guys you know about me,In shrot brief I describe my self to you<br>
+            Hii I am rishav raj from Gaya, learning web devlopment and doing polytecnic in computer science.</p> 
+                </div>
+            </div>
+        </div>   
+    </div>
+</div>
+    <br><br>
+    <h1 style="text-align: center;">Portfolio</h1>
+    <p style="text-align: center;""margin: 100px;"><i>There are some of my projects while learning Web devlopment.This projects are made up with "HTML";"Css";"Bootstrap";"JavaScript".</i></p>
+    <div class="container">
+              <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                 <div class="col">
+          <div class="card shadow-sm">
+           <a href="prot2.html"><img src="card2.png" height="290px" width="350px"></a>
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+         <div class="col">
+          <div class="card shadow-sm">
+          <a href="prot4.html"><img src="sk1.png" height="300px" width="350px"></a>
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+         <div class="col">
+          <div class="card shadow-sm">
+           <a href="prot6.html"><img src="sk2.png" height="300px" width="350px" ></a>
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+         <div class="col">
+          <div class="card shadow-sm">
+           <a href="project15.html"><img src="prot1.png" height="300px" width="350px"></a>
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+         <div class="col">
+          <div class="card shadow-sm">
+            <a href="port7.html"><img src="sk3.png" height="300px" width="350px"></a>
+
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+         <div class="col">
+          <div class="card shadow-sm">
+          <a href=https://mela-babu.tabhishek.repl.co/><img src="img123.jpg" height="300px" width="350px"></a>
+            <div class="card-body">
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+            </div>
+        </div>
+    </div>
+     <section id="resume" class="resume">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Resume</h2>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-12" data-aos="fade-up">
+            <h3 class="resume-title">Summary</h3>
+            <div class="resume-item pb-0">
+              <h4>Rishab raj</h4>
+              <p><em>A Web Developer and have great intrest in programming ,also enjoying to join techfest in the localities. </em></p>
+            </div>
+
+            <h3 class="resume-title">Education</h3>
+            <div class="resume-item">
+              <h4>Computer Science & Engineering</h4>
+              <h5>2023 - Present </h5>
+              <p><em>Government Polytechnic Gulzarbagh, Patna, Bihar</em></p>
+            </div>
+            <div class="resume-item">
+              <h4>Intermediate in Science</h4>
+              <h5>2022 - 2023</h5>
+              <p><em>Inter college Bhimpura,jhanabad</em></p>
+              <!-- <p>Qui deserunt veniam. Et sed aliquam labore tempore sed quisquam iusto autem sit. Ea vero voluptatum qui ut dignissimos deleniti nerada porti sand markend</p> -->
+            </div>
+            <div class="resume-item">
+              <h4>Matriculation</h4>
+              <h5>2020 - 2021</h5>
+              <p><em>DAV Cantt Area, Gaya</em></p>
+            </div>
+          </div>
+    </section>
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "200px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+</body>
+</html>
